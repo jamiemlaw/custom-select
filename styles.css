@@ -1,0 +1,22 @@
+.select {
+  position: relative;
+  display: inline-block;
+}
+.select [aria-expanded="false"] {
+  display: none;
+}
+.select [aria-expanded="false"][aria-haspopup] {
+  display: inline-block;
+}
+.select [role="menu"] {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+.select [role="menu"] li {
+  white-space: nowrap;
+}
